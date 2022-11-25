@@ -439,4 +439,7 @@ footer p {
             width: 95%;
             margin: 0 auto;
         }
+    footer ul li a {
+            padding: .2rem;
+        }
     }
