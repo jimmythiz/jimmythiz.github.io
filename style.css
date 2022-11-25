@@ -1,0 +1,429 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: lighter;
+}
+a{
+    font-weight: 900;
+}
+.popup{
+    position: fixed;
+    top: 0;
+    background-color: rgb(0,107,163);
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    padding: .5em;
+    width: 100%;
+}
+.popup a {
+    color: white;
+}
+.none{
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    padding: .8em;
+    text-align: center;
+    width: 100%;
+}
+nav {
+    position: fixed;
+    background-color: white;
+    top: 2rem;
+    width: 100%;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .navimage a img{
+    width: 13.75rem;
+    margin: 1rem;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
+}
+nav ul li {
+    flex-wrap: nowrap;
+    padding: .2rem;
+    margin: 1rem;
+}
+nav ul li a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: black;
+}
+nav ul li a:active{
+    color:  rgb(0,107,163);
+}
+nav .icons{
+    margin-right: 1rem;
+}
+nav .icons a {
+    padding: .6rem;
+    color: rgb(110,110,110);
+    font-size: 1.2rem;
+}
+nav ul li a:hover,nav .icons a:hover{
+    color: rgb(0,107,163);
+}
+.navimage2{
+    display: none;
+}
+section{
+    margin-top: 7rem;
+    margin-left:auto ;
+    margin-right:auto ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section .hero2 h2{
+    color: black;
+    font-size: 4rem;
+}
+.responsive{
+    width: 50%;
+    height: auto;
+    max-width: 450px;
+}
+section .hero2 span{
+    color:  rgb(0,107,163);
+    font-size: 4rem;
+}
+.row{
+    display: flex;
+    margin: 3rem;
+    justify-content: center;
+    height: auto;
+    width: 90%;
+}
+.row .left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 30rem;
+    min-width: 1rem;
+    white-space: wrap;
+}
+.row .left .main1 h2{
+    font-size: 3rem;
+}
+
+.main1 h3{
+    color: rgb(0,107,163);
+    font-size: 1.3rem;
+    white-space: inherit;
+}
+.main1 h4{
+    color: black;
+    margin: 3em 0;
+    line-height: 1.6em;
+    white-space: inherit;
+}
+blockquote{
+    line-height: 1.7em;
+    white-space: inherit;
+}
+.right img{
+    height: auto;
+    width: clamp(39vw,100%,40vw)
+}
+img .responsive2 {
+
+    height: auto;
+    object-position: right;
+}
+.buybook{
+    display: grid;
+    grid-template-rows: repeat(7,1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 1rem 0;
+    width: 70%;
+    margin: 5rem auto;
+}
+.buybook p{
+    color: rgb(0,107,163);
+    font-size: 1.2rem;
+}
+.buybook img{ 
+    width: 13%;
+}
+.hard{
+    grid-column:1/2 ;
+    grid-row: 1/2;
+}
+.audio {
+    grid-column:1/2 ;
+    grid-row: 3/4;
+}
+.buybookicons1{
+    grid-column:1/8 ;
+    grid-row: 2/3;
+    margin-top: -1rem;
+}
+.buybookicons{
+    grid-column:1/8 ;
+    grid-row: 4/5;
+    margin-top: -1rem;
+}
+.about {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90vw;
+    margin: 0 10vw;
+}
+.responsive3{
+    width: clamp(13rem,20vw, 20rem);
+}
+.abouttext{
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.abouttext h2{
+    font-size: 3rem;
+}
+.abouttext h3{
+    font-size: 1.5rem;
+    color: rgb(0,107,163);
+    margin:.8rem 0 2rem 0;
+}
+.abouttext h4 {
+    font-size: clamp(.9rem ,1vw, 1rem);
+    line-height: 1.8rem;
+}
+.abouttext h4 a{
+    color: rgb(0,107,163);
+    text-decoration: none;
+}
+.abouttext h4 a:hover{
+    color: rgb(84, 160, 200);
+    text-decoration: none;
+}
+.prefooter{
+    background-color: rgb(248, 242, 242);
+    width: 100vw;
+}
+.connect{
+    display: flex;
+    justify-content: space-between;
+    width: 70vw;
+    margin: 0 auto;
+
+    background-color: rgb(248, 242, 242);
+}
+.connect1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(248, 242, 242);
+    margin: 0 auto;
+    width: 100%;
+
+}
+.connect2{
+    background-color: white;
+    width: 80%;
+    margin: 6rem 0rem 6rem 5rem;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.connect1 h2{
+    font-size: 3rem;
+}
+.connect1 h3{
+    color: rgb(0,107,163);
+    font-size: 1.5rem;
+}
+.connect2 img{
+    width: 10%;
+    border-radius: .5rem;
+}
+.connect2 h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: .5rem 0;
+}
+.connect2 h4 {
+    width: 70%;
+    text-align: center;
+    line-height: 1.2rem;
+}
+.connect2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 1rem;
+    outline: none;
+}
+.crazy{
+    display: flex;
+    margin: 1rem;
+}
+.connect2 input,button{
+    border:1px solid red;
+}
+.connect2 input{
+    padding: 1rem;
+}
+ button {
+    color: white;
+    background-color: red;
+    padding: 1rem;
+    font-weight: 800;
+    outline: none;
+}
+::placeholder{
+    padding: .6rem;
+}
+footer{
+    background-color: rgb(0,107,163);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+footer a {
+    text-decoration: none;
+    color: white;
+}
+footer a h2{
+    font-size: 3rem;
+    color:white;
+    font-weight: 100;
+    text-decoration: none;
+    margin: 4rem 0 2rem 0;
+}
+footer ul {
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+footer ul li a{
+    color: white;
+    padding: 2rem;
+    font-size: 1.2rem;
+}
+footer ul li:hover{
+    text-decoration: underline;
+}
+footer em {
+    padding: 3rem;
+    font-size: 1.2rem;
+}
+footer .footericon a  {
+    padding: .7rem;
+    color: white;
+    font-size: 1.1rem;
+}
+footer .footericon{
+    margin: 0 0 2rem 0;
+}
+footer p {
+    margin-bottom: 1rem;
+}
+@media only screen and (max-width: 800px) {
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .navimage2{
+            display: contents;
+        }
+        nav ul, nav .icons{
+            display: none;
+        }
+        section{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        section .hero2{
+            margin: 2rem 0;
+        }
+        .row {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+        .row .left .main1{
+            margin: 0;
+            padding: 1rem;
+        }
+        .row .right  {
+            width: 50%;
+            margin: 0 auto;
+        }
+        .about{
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+        .abouttext{
+            width: 90%;
+        }
+        .responsive3{
+            margin: 2rem ;
+        }
+        .buybook{
+            display: block;
+        }
+        .buybook .buybookicons1 a img, .buybook .buybookicons a img{
+            width: 40%;
+            margin: 1rem;
+        }
+        .buybook .hard p,.audio{
+            margin: 2rem 0;
+        }
+        .connect{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .connect2{
+            margin-bottom: 0;
+        }
+        .connect1{
+            margin: 2rem 0;
+        }
+        footer ul li{
+            padding: 1rem 0;
+        }
+        .connect2 img {
+            width: 30%;
+        }
+        .connect2 h3,.connect h4{
+            width: 100%;
+        }
+        .connect2 label input{
+            width: 100%;
+            height: 5%;
+            padding: 1rem;
+        }
+        .connect2 label button {
+            font-size: .8rem;
+            height: 1rem;
+            padding-bottom: 1rem;
+        }
+        ::placeholder{
+            font-size: .7rem;
+        }
+        .connect2{
+            padding:2 6rem;
+            width: 100%;
+        }
+    }
