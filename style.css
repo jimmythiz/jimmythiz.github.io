@@ -134,7 +134,8 @@ blockquote{
 }
 .right img{
     height: auto;
-    width: clamp(39vw,100%,40vw)
+    width: clamp(39vw,100%,40vw);
+    margin: 5rem 0 0 0;
 }
 img .responsive2 {
 
