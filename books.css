@@ -209,5 +209,8 @@ footer p {
         grid-template-columns: auto auto auto;
         gap: 1rem;
     }
+    footer ul li a {
+            padding: .2rem;
+    }
 
 }
