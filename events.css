@@ -153,4 +153,9 @@ footer p {
     main{
         width: 95%;
     }
+    footer ul{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 1rem;
+    }
 }
