@@ -1,0 +1,250 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-weight: 100;
+}
+.aboutwrapper{
+    margin: 0;
+    padding: 0;
+}
+.popup{
+    width: 100%;
+    text-align: center;
+    background-color: rgb(0,107,163);
+    padding: .5rem;
+    color: white;
+    top: 0;
+}
+.popup a {
+    color:white;
+}
+nav {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    flex-wrap: wrap;
+    top: 2rem;
+}
+nav .navimage{
+    width: 15vw;
+}
+nav ul li a{
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: black;
+}
+nav ul li a:hover{
+    color: rgb(0,107,163);
+}
+nav ul li {
+    list-style-type: none;
+    padding: 1.6rem;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.navimage2{
+    display: none;
+}
+.icons a{
+    padding: .7rem;
+    color: rgb(170,170,170);
+}
+.icons a:hover{
+    color: rgb(0,107,163);
+} 
+@media only screen and (max-width: 1100px) {
+    nav .icons {
+        display: none;
+    }
+}
+.abouthank {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+}
+.abouthank h2{
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+.abouthank h3{
+    font-size: 1.5rem;
+    margin: 0 0 2rem 0;
+    color: rgb(0,107,163);
+}
+.abouthank h4{
+    line-height: 1.5rem;
+}
+.hankphotos{
+    display: flex;
+    padding: 3rem 0;
+}
+.hankphotos1 {
+    height: auto;
+    width: 25%;
+}
+.moreabouthank p{
+    width: 70%;
+    margin: auto;
+    line-height: 1.7rem;
+    padding-bottom: 3rem;
+}
+.backg{
+    background-color: rgb(248,251,244);
+    padding: 5rem 0;
+}
+.press{
+    width: 70%;
+    margin: auto;
+}
+.press h3{
+    font-size: 3rem;
+}
+.press .row1{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+}
+.press .row2{
+    display: flex;
+    flex-direction: column;
+    margin-right: .4rem;
+}
+.press .row3{
+    display: flex;
+    align-items: center;
+    margin: 0 .5rem;
+}
+.row3 .row3img{/*
+    height: auto;
+    width: 100%;*/
+    height: auto;
+    width: clamp(29vw,550rem,30vw) ;
+}
+.rowimage{
+ /*   width: 180%;
+*/
+    flex-grow: 1;
+    flex-basis: 1;
+    flex-shrink: 1;
+}
+.row2 h3{
+    color: rgb(0,107,163);
+    font-size: 1rem;
+    margin: 1rem 0;
+    font-weight: 800;
+}
+.row2 h2{
+    margin: 2rem 0;
+}
+.row2 h2:hover{
+    color: rgb(0,107,163);
+}
+button{
+    font-size: 3rem;
+    height: 10%;
+    width: 10%;
+    background-color:rgb(0,107,163) ;
+    outline: none;
+    border: none;
+    border-radius: .2rem;
+}
+button:hover{
+    color: white;
+}
+footer{
+    background-color: rgb(0,107,163);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+footer a {
+    text-decoration: none;
+    color: white;
+}
+footer a h2{
+    font-size: 3rem;
+    color:white;
+    font-weight: 100;
+    text-decoration: none;
+    margin: 4rem 0 2rem 0;
+}
+footer ul {
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+footer ul li a{
+    color: white;
+    padding: 2rem;
+    font-size: 1.2rem;
+}
+footer ul li:hover{
+    text-decoration: underline;
+}
+footer em {
+    padding: 3rem;
+    font-size: 1.2rem;
+}
+footer .footericon a  {
+    padding: .7rem;
+    color: white;
+    font-size: 1.1rem;
+}
+footer .footericon{
+    margin: 0 0 2rem 0;
+}
+footer p {
+    margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 912px) {
+    nav{
+        display: none;
+    }
+    .abouthank{
+        width: 95%;
+        margin: auto;
+    }
+    .navimage2{
+        display: contents;
+    }
+    .navimage3{
+        width: 50%;
+        padding:3rem 3rem 3rem 1rem;
+    }
+    .hankphotos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .hankphotos1{
+        width: 100%;
+    }
+    .press{
+        width: 98%;
+        margin: auto;
+    }
+    button{
+        height: 2%;
+        width: 5%;
+        font-size: 1.5rem;
+        margin: 0;
+    }
+    .row2 h3, .row2 h2,.row2 h4{
+        margin: .4rem;
+    }
+}
