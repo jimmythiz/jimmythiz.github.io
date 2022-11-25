@@ -167,6 +167,9 @@ footer p {
     nav .icons{
         display: none;
     }
+    main,main .book1 .left,blockquote{
+        width: 95%;
+    }
 }
 
 @media only screen and (max-width:800px) {
@@ -183,12 +186,13 @@ footer p {
         top: rem;
     }
     main {
-        width: 95%;
+        width: 98%;
     }
     .book1{
         display:flex ;
         flex-direction:column ;
         width: 100%;
+        justify-content: flex-start;
     }
     .left,.right{
         width:100%;
@@ -199,6 +203,11 @@ footer p {
     }
     .block1{
         display: contents;
+    }
+    footer ul{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 1rem;
     }
 
 }
