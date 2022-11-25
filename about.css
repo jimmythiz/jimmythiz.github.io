@@ -247,4 +247,12 @@ footer p {
     .row2 h3, .row2 h2,.row2 h4{
         margin: .4rem;
     }
+    .moreabouthank p{
+        width: 95%;
+    }
+    footer ul{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 1rem;
+    }
 }
